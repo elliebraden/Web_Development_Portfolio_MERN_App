@@ -1,0 +1,157 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #282c34;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+ /* look around 9min in video for tips */
+
+ /* anything blank is required but was not in a2
+ if there is a space in a section it indicated the 
+ lower half was not requiered but added by me */
+ body {                            
+    font-family: 'Lucida Console', 'Courier New'; 
+    background-color:#e9d2f4;
+    color: #46416D;
+    margin: 0; /* 0 to avoid blocky sections */
+    padding: ;
+}
+
+header {
+    background-color: #d7816a;
+    color: #dcf1cf;
+    margin: ;
+    padding: 3%;
+    
+    text-align: center;
+}
+
+footer{
+    background-color: #d7816a;
+    color: #dcf1cf;
+    margin: ;
+    margin-top: 50px;
+    padding: 3%;
+}
+
+nav{
+    background-color: #46416D;
+    border: ;
+    margin: 0;
+    padding: 2%;
+    text-decoration: none;
+
+    height: 25px;
+    font-size: 22px;
+} 
+nav a:visited {
+    color:#e9d2f4;
+}  
+nav a:hover {
+    color: #dcf1cf;
+}
+/* think i need this one as a correction from a2 - look at rubric/feedack */
+nav a:link { 
+  color: ;
+  margin: 3%;
+}
+
+main {
+    background-color: ;
+    color: ;
+    margin: 2%;
+    padding: 10px;
+}
+
+h1, h2 {
+    color: #46416D;
+}
+
+dt {
+    font-weight: bold;
+    color: #46416D;
+}
+
+table{
+    background: #dcf1cf;
+    border: 3px solid #46416D;
+    border-collapse: collapse;
+    padding: 1%;
+    width: 100%;
+    font-size: larger;
+}
+
+/* they have 
+tr th{} vs tr, td{}
+tr td{} vs thead, th{} */
+tr, td {
+    border: 3px solid #46416D;
+    color: ;
+    padding: 1%;
+
+    background: #dcf1cf;
+    border-collapse: collapse;   
+}
+
+thead, th {
+    border: 3px solid #46416D;
+    color: ;
+    padding: ;
+
+    background: #d7816a;
+}
+
+input{
+  padding: ;
+}
+
+/* consider using the some of the boxes class
+stylying shape wise */
+button{
+  padding: ;
+}
+
+/* also consider if i am adding class id to 
+elements and if i would want the to be styled differently*/
+
+
+/* can probable remove if wanted */
+/* OSU list made into boxes that flex */
+.boxes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.boxes li {
+    list-style-type: none;
+    color: #d7816a;
+    background: #dcf1cf;
+    margin: 1rem; 
+    padding: 1rem;
+    width: 15rem;
+    border:.5rem solid #46416D;                   /*border*/
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    text-align: center;                             /*text*/
+    font-size: 8rem;
+    font-weight: bold;
+}
