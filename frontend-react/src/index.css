@@ -20,68 +20,74 @@ body {
   min-width: 320px;
   min-height: 100vh;
 } */
- /* look around 9min in video for tips */
 
- /* anything blank is required but was not in a2
- if there is a space in a section it indicated the 
- lower half was not requiered but added by me */
+/* 
+Please note there are various instances of color or background-color 
+indicated to be defined in the instructions where I wanted the color to 
+be that which is inherited and I have not redefined it to limit repition
+*/
+
  body {                            
     font-family: 'Lucida Console', 'Courier New'; 
     background-color:#e9d2f4;
     color: #46416D;
     margin: 0; /* 0 to avoid blocky sections */
-    padding: ;
+    padding: 0;
+    text-align: center;
 }
 
 header {
     background-color: #d7816a;
     color: #dcf1cf;
-    margin: ;
-    padding: 3%;
-    
-    text-align: center;
+    margin: 0;
+    padding: 1%;
+
+    min-height: 5vh;
+
 }
 
 footer{
     background-color: #d7816a;
     color: #dcf1cf;
-    margin: ;
     margin-top: 50px;
     padding: 3%;
+
+    min-height: 5vh;
 }
 
 nav{
     background-color: #46416D;
-    border: ;
     margin: 0;
-    padding: 2%;
-    text-decoration: none;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    padding: 5px;
 
     height: 25px;
     font-size: 22px;
 } 
-nav a:visited {
+
+/* nav a:visited {
     color:#e9d2f4;
-}  
-nav a:hover {
-    color: #dcf1cf;
-}
-/* think i need this one as a correction from a2 - look at rubric/feedack */
-nav a:link { 
-  color: ;
+}   */
+
+nav a { 
+  color: #e9d2f4;
   margin: 3%;
 }
 
-main {
-    background-color: ;
-    color: ;
-    margin: 2%;
-    padding: 10px;
-}
+nav a:hover {
+    color: #dcf1cf;
+} 
 
+main {
+    margin: 0;
+    padding: 10px;
+    min-height: 70vh;
+}
 h1, h2 {
     color: #46416D;
 }
+
 
 dt {
     font-weight: bold;
@@ -97,61 +103,48 @@ table{
     font-size: larger;
 }
 
-/* they have 
-tr th{} vs tr, td{}
-tr td{} vs thead, th{} */
 tr, td {
     border: 3px solid #46416D;
-    color: ;
-    padding: 1%;
-
+    padding: 10px;
     background: #dcf1cf;
-    border-collapse: collapse;   
+    /* border-collapse: collapse;    */
 }
 
 thead, th {
     border: 3px solid #46416D;
-    color: ;
-    padding: ;
-
+    padding: 8px;
     background: #d7816a;
 }
 
 input{
-  padding: ;
+  padding: 3px;
+  margin: 3px;
 }
 
-/* consider using the some of the boxes class
-stylying shape wise */
-button{
-  padding: ;
-}
-
-/* also consider if i am adding class id to 
-elements and if i would want the to be styled differently*/
-
-
-/* can probable remove if wanted */
-/* OSU list made into boxes that flex */
-.boxes {
+fieldset {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 0;
+    margin: 1;
+    border-style: hidden;
     padding: 0;
 }
 
-.boxes li {
-    list-style-type: none;
-    color: #d7816a;
-    background: #dcf1cf;
-    margin: 1rem; 
-    padding: 1rem;
-    width: 15rem;
-    border:.5rem solid #46416D;                   /*border*/
-    border-top-right-radius: 3rem;
-    border-bottom-left-radius: 3rem;
-    text-align: center;                             /*text*/
-    font-size: 8rem;
-    font-weight: bold;
+form {
+  background:#dcf1cf;
+  border-top-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+
+button{
+  margin: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 10px;
+  width: 50%;
+  
+  color: #dcf1cf;
+  background:#46416D;
+  border-top-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
 }

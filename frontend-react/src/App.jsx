@@ -12,8 +12,8 @@ function App() {
   return (
     <div >
       <header>
-        <h1> app title </h1>
-        <p> unique text about your app. Keep it short. </p>
+        <h1> Track-a-lator </h1>
+        <p> Save the sweating for the gym not the exercises tracker</p>
       </header>
       <main>
         <Router>

@@ -1,6 +1,3 @@
-//  HTML Table component
-//      Maps the data from the collection of documents by calling the Row 
-//      component into the <tbody> of the <table>.
 import ExerciseRow from './ExerciseRow'
 
 function ExerciseTable({exercisesData, onDelete, setExerciseToEdit}){
