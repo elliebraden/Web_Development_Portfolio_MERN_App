@@ -3,7 +3,6 @@ import ExerciseRow from './ExerciseRow'
 function ExerciseTable({exercisesData, onDelete, setExerciseToEdit}){
     return (
         <table>
-            <caption> </caption>
             <thead> 
                 <tr>
                     <th></th>
@@ -24,6 +23,5 @@ function ExerciseTable({exercisesData, onDelete, setExerciseToEdit}){
         </table>
     )
 }
-// need to figure out how to bring in database info and then map?
 
 export default ExerciseTable;

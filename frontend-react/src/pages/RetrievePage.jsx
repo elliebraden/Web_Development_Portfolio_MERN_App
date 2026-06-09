@@ -8,8 +8,8 @@ function RetrievePage({setExerciseToEdit}){
 
     //calls backend to retrieve all exercises
     const loadExercises = async() => {
-        const responce = await fetch('/exercises')
-        const Data = await responce.json()
+        const response = await fetch('/exercises')
+        const Data = await response.json()
         setExercises(Data)
     }
 
@@ -20,14 +20,11 @@ function RetrievePage({setExerciseToEdit}){
 
     //called on click of 'delete' icon
     const onDelete = async _id => {
-        const deleteResponce = await fetch(`/exercises/${_id}`, 
+        const deleteResponse = await fetch(`/exercises/${_id}`, 
             {method: 'DELETE'})
         //call load exercise if successful to properly display valid exercises
-        if (deleteResponce.status === 204) {
+        if (deleteResponse.status === 204) {
             loadExercises()
-        } else{
-            console.error(`Failed to delete movie with id = ${_id}, 
-                status code = ${response.status}`)
         }
     }
         

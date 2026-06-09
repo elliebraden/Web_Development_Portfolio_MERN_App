@@ -18,30 +18,24 @@ app.listen(PORT, async () => {
 
 //validation
 function validation(reqBody){
-    console.log(reqBody)
 // Ensure name is not empty.
     if (validator.isEmpty(reqBody['name'])){
-        console.log('name issue')
         return false
     };
     // Ensure reps is greater than 0.
     if (typeof(reqBody['reps']) !== 'number' || reqBody['reps'] <= 0){
-        console.log('reps issue')
         return false
     };
     // Ensure weight is equal to or greater than 0.
     if (typeof(reqBody['weight']) !== 'number' || reqBody['weight'] < 0){
-        console.log('weight issue')
         return false
     }
     // Ensure unit is one of these values: "kgs", "lbs", or "miles".
     if (!['kgs', 'lbs', 'miles'].includes(reqBody['unit'])){ 
-        console.log('unit issue')
         return false
     };
     // If date is provided, ensure it is valid.
     if (reqBody['date'] && !validator.isDate(reqBody['date'])){
-        console.log('date issue')
         return false
     };
     return true
@@ -51,8 +45,6 @@ function validation(reqBody){
 //POST/exercises
 app.post('/exercises', asyncHandler(async(req, res) => {
     //validate
-    if (req.body.date === undefined){
-    }
     if (!validation(req.body)){
         sendErrorMesssage(res, 400, "Invalid request")
         return
